@@ -1,0 +1,14 @@
+# Secretos y datos locales
+.env
+.env.*
+*.parquet
+*.csv
+
+# Dependencias
+node_modules/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

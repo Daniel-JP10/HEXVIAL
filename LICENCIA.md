@@ -1,0 +1,1 @@
+Copyright © 2026 Daniel Andrés Jiménez Povea, Josué David Morelo Castro, Jostin Andrés Colón Ramos y Antonio De Jesús Márquez Vásquez. Todos los derechos reservados. No se concede permiso para usar, copiar, modificar ni distribuir este código sin autorización escrita de los autores. Los datos pertenecen a sus fuentes originales.
