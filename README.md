@@ -102,7 +102,7 @@ Los reportes de análisis están en [reportes/](reportes/), entre ellos los dos 
 
 - Daniel Andrés Jiménez Povea
 - Josué David Morelo Castro
-- Jostin Andrés Colón Ramos
+- Jostin Andres Colón Ramos
 - Antonio De Jesús Márquez Vásquez
 
 Proyecto académico. Datos abiertos de la Secretaría Distrital de Movilidad de Bogotá y del Instituto Nacional de Medicina Legal vía SaluData.
