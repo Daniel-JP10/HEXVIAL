@@ -59,7 +59,7 @@ Para la mortalidad, el pronóstico de julio a diciembre de 2026 es de unas 56,8 
 **Mapa espacial.** Filtros por localidad y por gravedad, núcleos DBSCAN, sectores prioritarios y el detalle de cada hexágono con su historia mensual.
 
 <p align="center">
-  <img src="docs/imagenes/modelo_predictivo_escritorio_claro.webp" width="900" alt="Comparación del error de los modelos de predicción en 2019 y en 2020 a 2021">
+  <img src="docs/imagenes/modelo_predictivo_escritorio_claro.webp" width="900" alt="Diagnóstico del modelo con las 5 pruebas de sobredispersión y el efecto por hexágono">
 </p>
 
 **Modelo predictivo.** El diagnóstico estadístico, el efecto de cada sector, la comparación de errores entre modelos y el pronóstico del índice de la ciudad.
@@ -71,7 +71,7 @@ Para la mortalidad, el pronóstico de julio a diciembre de 2026 es de unas 56,8 
 **Mortalidad.** La serie de víctimas fatales por ciudad y por localidad, la reconciliación de las cifras y el pronóstico para 2026.
 
 <p align="center">
-  <img src="docs/imagenes/metodologia_indice_escritorio_claro.webp" width="900" alt="Sección de metodología con la fórmula del índice ponderado por gravedad y sus pesos">
+  <img src="docs/imagenes/metodologia_indice_escritorio_claro.webp" width="900" alt="Metodología: fuentes de datos, 198.392 siniestros analizados y exclusión del mes parcial de septiembre de 2021">
 </p>
 
 **Metodología.** Las fuentes, la construcción del índice, el glosario técnico y los créditos.
@@ -82,18 +82,19 @@ Los datos con coordenadas terminan en agosto de 2021: describen la estructura hi
 
 ## Validación
 
-El 16 de noviembre de 2026 se corrió la batería de pruebas sobre el commit publicado:
-- pruebas automáticas de la API: 18 de 18;
+El 16 de noviembre de 2026 se corrió la batería de pruebas de la versión v1.2.0, que corrige cifras y textos del sitio, de la API y de los reportes:
+- pruebas automáticas de la API: 22 de 22;
 - prueba de humo contra la API en producción: 10 de 10 endpoints;
 - valores de control de los reportes: 20 de 20;
-- pruebas del frontend: 34 de 34;
-- verificación de las cifras del sitio contra la API: 47 de 47, en un segundo intento, tras una falla del primero ajena a las cifras;
-- pruebas de interacción del mapa y de ponderación: aprobadas;
-- auditoría automatizada de accesibilidad: sin violaciones en 20 configuraciones.
+- pruebas del frontend: 35 de 35;
+- verificación de las cifras del sitio contra la API: 120 de 120;
+- pruebas de interacción del mapa al alternar el tema y de ponderación: aprobadas;
+- auditoría automatizada de accesibilidad: sin violaciones en 20 configuraciones;
+- revisión del sitio en producción en las 5 rutas y los dos temas: cifras y textos corregidos, sin errores de consola.
 
-El detalle, con los criterios y los intentos fallidos, está en [pruebas_resultado.md](pruebas_resultado.md).
+El detalle, con los criterios y el commit sobre el que corrió cada prueba, está en [pruebas_resultado.md](pruebas_resultado.md).
 
-Los reportes de análisis están en [reportes/](reportes/) y el esquema de los datos que sirve la API, en [ESQUEMA.md](datos/procesados/api/ESQUEMA.md).
+Los reportes de análisis están en [reportes/](reportes/), entre ellos los dos de regresión: [regresion.md](reportes/regresion.md) y [regresion_pandemia.md](reportes/regresion_pandemia.md). El esquema de los datos que sirve la API está en [ESQUEMA.md](datos/procesados/api/ESQUEMA.md).
 
 ## Créditos
 
